@@ -1,19 +1,19 @@
-# Financial Data Analyzer
+# Financial Data Analyzer  
 
-Un instrument de analiză și vizualizare a datelor financiare pentru a explora și a înțelege comportamentul piețelor pe baza datelor istorice ale prețurilor acțiunilor, dezvoltat în Python. Acest program oferă o interfață de linie de comandă (CLI) pentru a rula diverse analize pe date de prețuri de acțiuni, incluzând trenduri, volatilitate, medii mobile, predicții și randamente.
+## The first challenge: Data Exploration  
+The project begins with analyzing and exploring **historical stock price data**. To make this process smooth, the tool provides a **command-line interface (CLI)** that allows quick access to different types of financial analyses. This ensures flexibility and keeps the program lightweight, while still offering a wide range of functionalities.  
 
-## Caracteristici Principale
+## The second challenge: Visualization  
+Understanding markets requires more than raw numbers. To address this, the analyzer generates **interactive charts** for price trends, trading volume, and volatility. It also supports **moving average analysis**, with calculations for both 5-day and 20-day simple moving averages (SMA), helping to identify patterns and market signals.  
 
-* **Analiză de bază**: Vizualizare rapidă a statisticilor descriptive și a informațiilor despre date.
-* **Grafice interactive**: Generează grafice pentru a vizualiza trendurile prețurilor, volatilitatea și volumele de tranzacționare.
-* **Analiza Mediilor Mobile**: Calculează și vizualizează mediile mobile simple (SMA) pe 5 și 20 de zile.
-* **Predicție simplă**: Folosește un model de regresie liniară pentru a prezice prețurile viitoare.
-* **Analiză statistică**: Include un Runs Test pentru a evalua randomness-ul datelor și o histogramă pentru distribuția prețurilor.
-* **Analiza Randamentelor**: Calculează și vizualizează randamentele zilnice și randamentul cumulativ total.
-* **Corelație Preț-Volum**: Măsoară corelația dintre prețul acțiunilor și volumul de tranzacționare.
+## The third challenge: Predictions and Statistics  
+Stock data can be unpredictable, so statistical methods are essential. The project integrates a **linear regression model** to provide simple price forecasts, along with statistical tools such as the **Runs Test** for randomness evaluation and **histograms** for price distribution. Additionally, the analyzer computes **daily returns** and **cumulative returns**, offering insights into profitability over time.  
 
-## Cum Funcționează
+## The final challenge: Correlation Analysis  
+Market behavior is influenced by many factors, one of them being **trading volume**. The analyzer measures the **correlation between price and volume**, helping to uncover relationships that may not be visible at first glance.  
 
-Proiectul este structurat în două componente principale:
-* `utils.py`: Conține toate funcțiile logice de analiză a datelor. Fiecare tip de analiză (volatilitate, medii mobile, etc.) este încapsulat într-o funcție separată.
-* `main.py`: Conține interfața de linie de comandă (CLI) care permite utilizatorului să selecteze analiza dorită dintr-un meniu.
+## Results  
+To keep the project organized and adaptable, the implementation is divided into two main components:  
+
+- **`utils.py`** → Contains all core data analysis functions (volatility, moving averages, predictions, etc.), each encapsulated in a separate function.  
+- **`main.py`** → Hosts the CLI, which guides the user through a menu of available analyses and generates results on demand.  
